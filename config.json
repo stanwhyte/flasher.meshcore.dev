@@ -35,33 +35,16 @@
 		}
 	},
 	"maker": {
-		"elecrow": {
-			"name": "Elecrow"
-		},
-		"heltec": {
-			"name": "Heltec"
-		},
-		"seeed": {
-			"name": "Seeed Studio"
-		},
-		"rak": {
-			"name": "RAK Wireless"
-		},
-		"promicro": {
-			"name": "ProMicro"
-		},
-		"lilygo": {
-			"name": "LilyGo"
-		},
-		"raspberry": {
-			"name": "Raspberry Pi"
-		}
-		},
-		"m5stack": {
-			"name": "M5Stack"
-		}
+		"elecrow": { "name": "Elecrow" },
+		"heltec": { "name": "Heltec" },
+		"seeed": { "name": "Seeed Studio" },
+		"rak": { "name": "RAK Wireless" },
+		"promicro": { "name": "ProMicro" },
+		"lilygo": { "name": "LilyGo" },
+		"raspberry": { "name": "Raspberry Pi" },
+		"m5stack": { "name": "M5Stack" }
 	},
-	    "device": [
+	"device": [
 		{
 			"maker": "m5stack",
 			"class": "community",
@@ -88,7 +71,32 @@
 				}
 			]
 		},
-	},
+		{
+			"maker": "lilygo",
+			"class": "ripple",
+			"name": "LilyGo T-Deck",
+			"tooltip": "<img class='device' src='/img/lilygo_tdeck.svg'>",
+			"icon": "/img/lora.svg",
+			"type": "esp32",
+			"firmware": [
+				{
+					"role": "gui",
+					"version": {
+						"v7.14": {
+							"files": [
+								{
+									"type": "flash-wipe",
+									"name": "Ultra-TDeck-v7.14-merged.bin",
+									"title": "Combined app+partition+bootloader firmware bin"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	]
+}
 	"device": [
 		{
 			"maker": "lilygo",
