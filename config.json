@@ -56,6 +56,38 @@
 		"raspberry": {
 			"name": "Raspberry Pi"
 		}
+		},
+		"m5stack": {
+			"name": "M5Stack"
+		}
+	},
+	    "device": [
+		{
+			"maker": "m5stack",
+			"class": "community",
+			"name": "M5Stack Unit C6L",
+			"tooltip": "<img class='device' src='/img/m5stack_unit_c6l.svg'>",
+			"icon": "/img/lora.svg",
+			"type": "esp32-c6",
+			"firmware": [
+				{
+					"role": "companionUsb",
+					"version": {
+						"v1.0": {
+							"files": [
+								{
+									"type": "flash-wipe",
+									"name": "Unit-C6L-companion-v1.0-merged.bin",
+									"title": "Combined app+partition+bootloader firmware bin",
+									"offset": "0x0"
+								}
+							],
+							"notes": "* Initial support for M5Stack Unit C6L\n* ESP32-C6 Architecture"
+						}
+					}
+				}
+			]
+		},
 	},
 	"device": [
 		{
